@@ -47,9 +47,9 @@ resource "fly_machine" "mcServer" {
     MODRINTH_MODPACK        = "https://modrinth.com/modpack/sop"
     MODRINTH_PROJECTS       = "plasmo-voice, double-doors, villager-names-serilum, universal-graves, styled-nicknames"
     MODRINTH_DOWNLOAD_DEPENDENCIES = "optional"
-    WHITELIST_FILE = "https://github.com/seve/minecraft-server/raw/main/whitelist.txt"
-    EXISTING_WHITELIST_FILE = "SYNCHRONIZE"
-    ENFORCE_WHITELIST = "TRUE"
+    WHITELIST               = file("${path.module}/whitelist.txt")
+    ENFORCE_WHITELIST              = "TRUE"
+    EXISTING_WHITELIST_FILE       = "MERGE"
     OPS = "S33V"
   }
 
