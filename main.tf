@@ -62,6 +62,15 @@ resource "fly_machine" "mcServer" {
       ]
       protocol      = "tcp"
       internal_port = 25565
+    },
+        {
+      ports = [
+        {
+          port = 25565
+        }
+      ]
+      protocol      = "udp"
+      internal_port = 25565
     }
   ]
 
