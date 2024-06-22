@@ -44,6 +44,7 @@ resource "fly_machine" "mcServer" {
     MEMORY                         = "7G"
     AUTOSTOP_PKILL_USE_SUDO        = "TRUE"
     TYPE                           = "MODRINTH"
+    VERSION                        = "1.20.6"
     MODRINTH_MODPACK               = "https://modrinth.com/modpack/sop"
     MODRINTH_PROJECTS              = file("${path.module}/mods.txt")
     MODRINTH_DOWNLOAD_DEPENDENCIES = "optional"
