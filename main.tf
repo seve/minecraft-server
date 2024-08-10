@@ -41,7 +41,7 @@ resource "fly_machine" "mcServer" {
     ENABLE_AUTOSTOP                = "TRUE"
     AUTOSTOP_TIMEOUT_EST           = 120
     AUTOSTOP_TIMEOUT_INIT          = 120
-    MEMORY                         = "7G"
+    MEMORY                         = "4G"
     AUTOSTOP_PKILL_USE_SUDO        = "TRUE"
     TYPE                           = "MODRINTH"
     VERSION                        = "1.20.6"
@@ -82,7 +82,7 @@ resource "fly_machine" "mcServer" {
   ]
 
   cpus   = 4
-  memory = 8192
+  memory = 5000
 
   depends_on = [fly_volume.mc_volume, fly_app.minecraft]
 }

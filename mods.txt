@@ -1,0 +1,15 @@
+plasmo-voice
+double-doors
+villager-names-serilum
+universal-graves
+styled-nicknames
+automatic-doors
+inventory-totem
+gui-followers
+hand-over-your-items
+hide-hands
+name-tag-tweaks
+nether-portal-spread
+pet-names
+replanting-crops
+smaller-nether-portals
